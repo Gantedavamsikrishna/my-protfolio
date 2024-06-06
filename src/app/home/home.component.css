@@ -1,0 +1,90 @@
+nav {
+  background: red;
+  height: 60px;
+}
+.navbar-brand h3 {
+  color: #fff;
+  font-weight: 600;
+  margin-left: 65px;
+}
+a {
+  border: 2px solid red;
+  font-weight: 600;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.home .container {
+  padding: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 100px;
+  padding-left: 80px;
+  margin-top: 100px;
+}
+.container h3 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.container .name h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.typing p {
+  font-size: 33px;
+}
+.typing span {
+  color: red;
+}
+.btn {
+  border: 2px solid red;
+  background: red;
+  padding: 6px 30px;
+}
+.btn:hover {
+  color: red;
+  background-color: black;
+  border: 2px solid red;
+}
+.icons {
+  font-size: 30px;
+  margin-top: 50px;
+}
+.icons i {
+  margin: 10px;
+}
+.icons i:hover {
+  font-size: 28px;
+  cursor: pointer;
+  color: red;
+}
+.box {
+  width: 400px;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 50px;
+  background: red;
+  border-radius: 40% 80%;
+}
+
+img {
+  border-bottom-left-radius: 150px;
+  margin-top: -76px;
+  margin-left: 60px;
+  width: 300px;
+  height: auto;
+}
+span {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid red;
+  animation: blik-caret 0.75s step-end infinite;
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+}

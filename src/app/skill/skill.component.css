@@ -1,0 +1,49 @@
+.skill-content::before {
+  content: "";
+  width: 160px;
+  height: 3px;
+  position: absolute;
+  left: 43%;
+  background: #fff;
+}
+.skill-content::after {
+  content: "what i know";
+  position: relative;
+  bottom: 10px;
+  left: 45%;
+  font-size: 17px;
+  color: crimson;
+  padding: 0 5px;
+  background: black;
+}
+.row {
+  overflow: hidden;
+  margin-left: 50px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.text {
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 13px;
+}
+
+.btn {
+  background: red;
+  border: 2px solid red;
+  padding: 6px 23px;
+}
+.btn:hover {
+  background: black;
+  color: red;
+  border: 2px solid red;
+}
+img {
+  margin-left: 30px;
+  width: 90%;
+  height: auto;
+}

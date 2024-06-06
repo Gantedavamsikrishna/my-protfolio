@@ -1,0 +1,51 @@
+.container {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.contact-content::before {
+  content: "";
+  width: 150px;
+  height: 3px;
+  position: absolute;
+  left: 44%;
+  background: #fff;
+}
+.contact-content::after {
+  content: "get in touch";
+
+  position: relative;
+  bottom: 13px;
+  left: 46%;
+  font-size: 17px;
+  color: crimson;
+  padding: 0 5px;
+  background: black;
+}
+#row {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+h5 {
+  font-weight: 600;
+}
+.footer {
+  padding-top: 5px;
+  color: black;
+}
+h6 {
+  margin-top: 10px;
+}
+.footer span {
+  color: red;
+}
+
+.btn {
+  color: #fff;
+  border: 2px solid red;
+  background: red;
+}
+.btn:hover {
+  background: black;
+  color: red;
+  border: 2px solid red;
+}
