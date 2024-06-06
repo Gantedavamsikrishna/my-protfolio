@@ -85,6 +85,7 @@ button {
   margin-bottom: 100px;
 }
 .btn {
+  color: #fff;
   background: red;
   border: 2px solid red;
 }
