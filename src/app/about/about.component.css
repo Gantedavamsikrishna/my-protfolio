@@ -1,58 +1,91 @@
+.about {
+  position: relative;
+}
+
+.about h1 {
+  color: #fff;
+}
+
 .about-content::before {
   content: "";
   width: 170px;
   height: 3px;
   position: absolute;
-
-  left: 43%;
+  left: 50%;
+  transform: translateX(-50%);
   background: #fff;
 }
+
 .about-content::after {
   content: "who i am";
-
-  position: relative;
-  bottom: 13px;
-  left: 47%;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 17px;
   color: crimson;
   padding: 0 5px;
   background: black;
 }
+
 .row {
-  margin-left: 30px;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin: 0;
 }
+
 .box {
   overflow: hidden;
   border-radius: 5px;
-  margin-left: 50px;
-  width: 300px;
+  max-width: 300px;
   height: 320px;
   background-color: #fff;
 }
+
 .box img {
-  width: 300px;
+  width: 100%;
   height: auto;
 }
+
 .text {
   font-weight: 600;
   margin-top: 30px;
   font-size: 25px;
 }
+
 p {
   font-size: 12px;
 }
+
 .btn {
   padding: 6px 23px;
   border: 2px solid red;
   background: red;
 }
+
 .btn:hover {
   background: black;
   color: red;
   border: 2px solid red;
 }
+
 span {
   color: red;
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .about-content::before {
+    left: 48%;
+  }
+
+  .about-content::after {
+    top: 25px;
+    left: 45%;
+  }
 }

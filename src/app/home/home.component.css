@@ -2,13 +2,14 @@ nav {
   background: red;
   height: 60px;
 }
+
 .navbar-brand h3 {
   color: #fff;
   font-weight: 600;
   margin-left: 65px;
 }
-a {
-  border: 2px solid red;
+
+.navbar-brand {
   font-weight: 600;
   margin-right: 20px;
   color: #fff;
@@ -18,67 +19,80 @@ a {
   padding: 10px;
   padding-bottom: 30px;
   margin-bottom: 100px;
-  padding-left: 80px;
   margin-top: 100px;
 }
+
 .container h3 {
   font-size: 25px;
   margin-top: 10px;
 }
+
 .container .name h1 {
   font-size: 60px;
   font-weight: 600;
 }
+
 .typing p {
   font-size: 33px;
 }
+
 .typing span {
   color: red;
 }
+
 .btn {
   border: 2px solid red;
   background: red;
   padding: 6px 30px;
 }
+
 .btn:hover {
   color: red;
   background-color: black;
   border: 2px solid red;
 }
+
 .icons {
   font-size: 30px;
   margin-top: 50px;
 }
+
 .icons i {
+  color: #fff;
   margin: 10px;
 }
+
 .icons i:hover {
   font-size: 28px;
   cursor: pointer;
   color: red;
 }
+
 .box {
-  width: 400px;
-  height: 300px;
-  margin-left: 20px;
-  margin-top: 50px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px auto 0;
   background: red;
   border-radius: 40% 80%;
 }
 
 img {
   border-bottom-left-radius: 150px;
-  margin-top: -76px;
-  margin-left: 60px;
-  width: 300px;
+  width: 100%;
   height: auto;
+  margin-top: -76px;
+  margin-left: auto;
+  margin-right: auto;
 }
-span {
+
+.typing span {
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.15em solid red;
-  animation: blik-caret 0.75s step-end infinite;
+  animation: blink-caret 0.75s step-end infinite;
 }
+
 @keyframes blink-caret {
   from,
   to {
@@ -86,5 +100,24 @@ span {
   }
   50% {
     border-color: red;
+  }
+}
+
+@media (max-width: 576px) {
+  .container .name h1 {
+    font-size: 40px;
+  }
+
+  .typing p {
+    font-size: 20px;
+  }
+
+  .navbar-brand h3 {
+    margin-left: 0;
+  }
+
+  .home .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

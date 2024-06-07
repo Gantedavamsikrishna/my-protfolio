@@ -1,27 +1,46 @@
+/* General Styles */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.skill {
+  position: relative;
+}
+
+.skill h1 {
+  color: #fff;
+}
+
 .skill-content::before {
   content: "";
   width: 160px;
   height: 3px;
   position: absolute;
-  left: 43%;
+  left: 50%;
+  transform: translateX(-50%);
   background: #fff;
 }
+
 .skill-content::after {
   content: "what i know";
-  position: relative;
-  bottom: 10px;
-  left: 45%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 17px;
   color: crimson;
   padding: 0 5px;
   background: black;
 }
+
 .row {
-  overflow: hidden;
-  margin-left: 50px;
+  margin: 0;
   margin-top: 70px;
   margin-bottom: 100px;
 }
+
 .text {
   margin-top: 50px;
   font-size: 25px;
@@ -38,13 +57,33 @@ p {
   border: 2px solid red;
   padding: 6px 23px;
 }
+
 .btn:hover {
   background: black;
   color: red;
   border: 2px solid red;
 }
+
 img {
-  margin-left: 30px;
   width: 90%;
   height: auto;
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .skill-content::before {
+    left: 45%;
+  }
+
+  .skill-content::after {
+    top: 30px;
+    left: 45%;
+  }
 }
