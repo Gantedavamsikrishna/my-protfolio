@@ -1,20 +1,3 @@
-nav {
-  background: red;
-  height: 60px;
-}
-
-.navbar-brand h3 {
-  color: #fff;
-  font-weight: 600;
-  margin-left: 65px;
-}
-
-.navbar-brand {
-  font-weight: 600;
-  margin-right: 20px;
-  color: #fff;
-}
-
 .home .container {
   padding: 10px;
   padding-bottom: 30px;
@@ -86,10 +69,10 @@ img {
   margin-right: auto;
 }
 
-.typing span {
+.typing p span {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0.15em solid red;
+  border-right: 0.15em solid rgb(239, 43, 43);
   animation: blink-caret 0.75s step-end infinite;
 }
 

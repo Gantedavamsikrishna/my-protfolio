@@ -1,0 +1,40 @@
+nav {
+  background: red;
+  height: 60px;
+}
+
+.navbar-brand h3 {
+  color: #fff;
+  font-weight: 600;
+  margin-left: 65px;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  margin-right: 20px;
+  color: #fff;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    background-color: #343a40;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    color: white;
+  }
+}
