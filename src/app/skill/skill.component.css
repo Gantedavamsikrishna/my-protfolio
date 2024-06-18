@@ -25,9 +25,9 @@ body {
 
 .skill-content::after {
   content: "what i know";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
+  position: relative;
+  top: -10px;
+  left: 45%;
   transform: translateX(-50%);
   font-size: 17px;
   color: crimson;

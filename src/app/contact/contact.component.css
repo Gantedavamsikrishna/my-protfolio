@@ -15,9 +15,9 @@
 
 .contact-content::after {
   content: "get in touch";
-  position: absolute;
-  bottom: -13px;
-  left: 50%;
+  position: relative;
+  top: -6px;
+  left: 46%;
   transform: translateX(-50%);
   font-size: 17px;
   color: crimson;
@@ -56,6 +56,30 @@ h6 {
   background: black;
   color: red;
   border: 2px solid red;
+}
+.alert {
+  width: 10pc;
+  height: 2.5pc;
+
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Responsive Styles */

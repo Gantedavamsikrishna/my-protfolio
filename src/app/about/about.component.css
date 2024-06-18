@@ -18,9 +18,9 @@
 
 .about-content::after {
   content: "who i am";
-  position: absolute;
-  bottom: -13px;
-  left: 50%;
+  position: relative;
+  top: -13px;
+  left: 45%;
   transform: translateX(-50%);
   font-size: 17px;
   color: crimson;

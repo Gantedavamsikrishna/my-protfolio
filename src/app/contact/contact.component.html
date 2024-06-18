@@ -38,23 +38,65 @@
     <div class="col-lg-6">
       <h5>Message Me</h5>
       <div class="form-group">
-        <input type="text" class="form-control mb-2" placeholder="Name.." />
+        <input
+          type="text"
+          [(ngModel)]="name"
+          class="form-control mb-2"
+          placeholder="Name.."
+        />
         <input
           type="email"
           class="form-control mb-2"
+          [(ngModel)]="mail"
           placeholder="Mail@gmail.com"
         />
-        <input type="text" class="form-control mb-2" placeholder="Subject" />
+        <input
+          type="text"
+          class="form-control mb-2"
+          [(ngModel)]="mailstructure.subject"
+          placeholder="Subject"
+        />
         <textarea
           placeholder="Message......"
           rows="2"
           class="form-control mb-2"
+          [(ngModel)]="mailstructure.message"
         ></textarea>
-        <button class="btn btn-danger">Send message</button>
+        <div class="row">
+          <div class="col">
+            <button
+              class="btn btn-danger"
+              (click)="sendmail()"
+              [disabled]="isLoading"
+            >
+              Send message
+            </button>
+          </div>
+          <div class="col">
+            <div class="alert alert-success" *ngIf="resmsg">
+              <strong>Successfully sent!</strong>
+            </div>
+          </div>
+          <div class="col" *ngIf="isLoading">
+            <div class="spinner-grow text-info"></div>
+            <div class="spinner-grow text-info"></div>
+            <div class="spinner-grow text-info"></div>
+            <div class="spinner-grow text-info"></div>
+
+            <!-- <div
+              *ngIf="isLoading"
+              class="spinner-border text-light"
+              role="status"
+            >
+              <span></span>
+            </div> -->
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 <div class="footer bg-light text-center p-2">
   <h6>
     Created By <span>AV Creation's</span> | <i class="bi bi-copyright"></i>
