@@ -24,7 +24,7 @@
   left: 44%;
   transform: translateX(-50%);
   font-size: 17px;
-  color: crimson;
+  color: var(--primary);
   padding: 0 5px;
   background: black;
 }
@@ -38,8 +38,8 @@
 .box {
   border-radius: 40px 10px;
   width: 100%;
-  max-width: 300px;
-  height: 270px;
+  max-width: 400px;
+  height: 350px;
   background: #fff;
   overflow: hidden;
   position: relative;
@@ -78,20 +78,26 @@ h3 b {
   text-align: center;
   padding: 20px;
 }
+.applink {
+  font-size: 1.5em;
+  margin-bottom: 1.5pc;
+}
 
 .overlay-icons {
   display: flex;
   justify-content: space-around;
 }
 
-.overlay-icons i {
+.overlay-icons a {
+  color: #fff;
+  text-decoration: none;
   margin: 15px;
   font-size: 24px;
   cursor: pointer;
   transition: transform 0.5s;
 }
 
-.overlay-icons i:hover {
+.overlay-icons a:hover {
   transform: scale(1.2);
 }
 
@@ -102,14 +108,14 @@ button {
 
 .btn {
   color: #fff;
-  background: red;
-  border: 2px solid red;
+  background: var(--primary);
+  border: 2px solid var(--primary);
 }
 
 .btn:hover {
   background: #fff;
-  color: red;
-  border: 2px solid red;
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 
 /* Media Queries */

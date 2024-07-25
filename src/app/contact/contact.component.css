@@ -20,7 +20,7 @@
   left: 46%;
   transform: translateX(-50%);
   font-size: 17px;
-  color: crimson;
+  color: var(--primary);
   padding: 0 5px;
   background: black;
 }
@@ -29,10 +29,17 @@
   margin-top: 30px;
 }
 
-h5 {
+.text {
   font-weight: 600;
+  margin-top: 30px;
+  font-size: 35px;
 }
 
+p {
+  font-style: normal;
+  font-size: 0.5em;
+  font-weight: 100;
+}
 .footer {
   padding-top: 5px;
   color: black;
@@ -41,21 +48,24 @@ h5 {
 h6 {
   margin-top: 10px;
 }
+h5 {
+  font-size: 3em;
+}
 
 .footer span {
-  color: red;
+  color: var(--primary);
 }
 
 .btn {
   color: #fff;
-  border: 2px solid red;
-  background: red;
+  border: 2px solid var(--primary);
+  background: var(--primary);
 }
 
 .btn:hover {
   background: black;
-  color: red;
-  border: 2px solid red;
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 .alert {
   width: 10pc;
@@ -63,7 +73,18 @@ h6 {
 
   animation: fadeInOut 3s forwards;
 }
-
+td {
+  font-size: 1.5em;
+}
+td i {
+  color: var(--primary);
+  font-size: 1.5em;
+}
+span {
+  margin-left: -0.5pc;
+  background: transparent;
+  color: var(--primary);
+}
 @keyframes fadeInOut {
   0% {
     opacity: 0;

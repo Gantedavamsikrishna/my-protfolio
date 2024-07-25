@@ -6,38 +6,40 @@
 }
 
 .container h3 {
-  font-size: 25px;
+  font-size: 2.5em;
   margin-top: 10px;
 }
 
 .container .name h1 {
-  font-size: 60px;
+  font-size: 5em;
   font-weight: 600;
 }
 
 .typing p {
-  font-size: 33px;
+  font-size: 2.5em;
 }
 
 .typing span {
-  color: red;
+  color: var(--primary);
 }
 
 .btn {
-  border: 2px solid red;
-  background: red;
-  padding: 6px 30px;
+  border: 2px solid var(--primary);
+  background: var(--primary);
+  padding: 0.2pc 4pc;
+  font-size: 1.5em;
+  margin-bottom: 2pc;
 }
 
 .btn:hover {
-  color: red;
+  color: var(--primary);
   background-color: black;
-  border: 2px solid red;
+  border: 2px solid var(--primary);
+  transition: 0.5s ease-in-out;
 }
 
 .icons {
-  font-size: 30px;
-  margin-top: 50px;
+  font-size: 33px;
 }
 
 .icons i {
@@ -46,9 +48,11 @@
 }
 
 .icons i:hover {
-  font-size: 28px;
+  transition: 1ms ease-in-out;
+  font-size: 33px;
   cursor: pointer;
-  color: red;
+  color: var(--primary);
+  box-shadow: 0 0 30px rgba(235, 232, 232, 0.1);
 }
 
 .box {
@@ -56,7 +60,7 @@
   max-width: 400px;
   height: auto;
   margin: 20px auto 0;
-  background: red;
+  background: var(--primary);
   border-radius: 40% 80%;
 }
 
@@ -75,6 +79,10 @@ img {
   border-right: 0.15em solid rgb(239, 43, 43);
   animation: blink-caret 0.75s step-end infinite;
 }
+.home .icons {
+  z-index: 10;
+  position: relative;
+}
 
 @keyframes blink-caret {
   from,
@@ -82,7 +90,7 @@ img {
     border: transparent;
   }
   50% {
-    border-color: red;
+    border-color: var(--primary);
   }
 }
 

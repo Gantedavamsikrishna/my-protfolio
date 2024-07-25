@@ -1,5 +1,5 @@
 nav {
-  background: red;
+  background: var(--primary);
   height: 60px;
 }
 

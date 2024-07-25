@@ -12,3 +12,6 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+:root {
+  --primary: #efc20c;
+}

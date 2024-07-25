@@ -1,16 +1,13 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {
-  Mailstrucutre,
-  MailstrucutreModule,
-} from './mailstrucutre/mailstrucutre.module';
+import { Mailstrucutre } from './mailstrucutre/mailstrucutre.module';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MailService {
-  private apiurl = 'http://localhost:8080/send';
+  private apiurl = 'https://portfolio-mail-api-ikxf.onrender.com/send';
 
   constructor(private http: HttpClient) {}
 
