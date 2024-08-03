@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class MailService {
-  private apiurl = 'https://portfolio-mail-api-ikxf.onrender.com/send';
+  private apiurl = 'https://portfoliomail-9o3x.onrender.com/send';
 
   constructor(private http: HttpClient) {}
 
