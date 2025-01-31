@@ -3,7 +3,7 @@
   margin-bottom: 10px;
 }
 
-.contact-content::before {
+/* .contact-content::before {
   content: "";
   width: 150px;
   height: 3px;
@@ -23,15 +23,14 @@
   color: var(--primary);
   padding: 0 5px;
   background: black;
-}
+} */
 
-#row {
-  margin-top: 30px;
+h1 {
+  padding-top: 40px;
 }
 
 .text {
   font-weight: 600;
-  margin-top: 30px;
   font-size: 35px;
 }
 
@@ -57,21 +56,25 @@ h5 {
 }
 
 .btn {
-  color: #fff;
-  border: 2px solid var(--primary);
-  background: var(--primary);
-}
-
-.btn:hover {
-  background: black;
   color: var(--primary);
+  border: 2px solid var(--primary);
+  background: black;
+  padding: 5px 30px;
+}
+.btn:hover {
+  background: var(--primary);
+  color: #fff;
   border: 2px solid var(--primary);
 }
 .alert {
   width: 10pc;
   height: 2.5pc;
-
   animation: fadeInOut 3s forwards;
+}
+.t {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 td {
   font-size: 1.5em;

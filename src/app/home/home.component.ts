@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { tick } from '@angular/core/testing';
+import { Component, OnInit } from "@angular/core";
+import { tick } from "@angular/core/testing";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.css"],
 })
 export class HomeComponent implements OnInit {
-  texts: String[] = ['Developer...', 'Learner..'];
+  sendMail() {
+    window.location.href =
+      "mailto:yourmail@example.com?subject=Support&body=Hello";
+  }
+
+  texts: String[] = ["Developer...", "Learner.."];
   currenttext: number = 0;
-  displaytext: String = '';
+  displaytext: String = "";
   charIndex: number = 0;
   ngOnInit(): void {
     this.typetext();

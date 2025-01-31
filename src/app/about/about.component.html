@@ -12,16 +12,19 @@
     </div>
     <div class="col-12 col-md-6">
       <div class="text">
-        I'm Vamsi and I'm a <span>{{ displaytext }}</span>
+        Vamsi Krishna, I'm a <span>{{ displaytext }}</span>
         <p>
-          I am Vamsi Krishna, currently pursuing my Master's in Computer
-          Applications <span>(MCA) </span> at <span>Aditya University</span> .
-          My academic journey has equipped me with a solid foundation in
-          computer science and a deep understanding of various web development
-          technologies. I have a passion for creating dynamic, user-friendly
-          websites and applications.
+          Currently pursuing my Master's in Computer Applications
+          <span>(MCA) </span> at <span>Aditya University</span> . My academic
+          journey has equipped me with a solid foundation in computer science
+          and a deep understanding of various web development technologies. I
+          have a passion for creating dynamic, user-friendly websites and
+          applications.
         </p>
-        <button class="btn btn-rounder btn-danger">Download CV</button>
+
+        <button class="btn btn-rounder btn-danger" (click)="downloadResume()">
+          Download CV
+        </button>
       </div>
     </div>
   </div>

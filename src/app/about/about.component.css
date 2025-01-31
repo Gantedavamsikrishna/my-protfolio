@@ -4,9 +4,10 @@
 
 .about h1 {
   color: #fff;
+  padding-top: 80px;
 }
 
-.about-content::before {
+/* .about-content::before {
   content: "";
   width: 170px;
   height: 3px;
@@ -26,7 +27,7 @@
   color: var(--primary);
   padding: 0 5px;
   background: black;
-}
+} */
 
 .box {
   overflow: hidden;
@@ -51,17 +52,19 @@ p {
   font-style: normal;
   font-weight: 100;
   font-size: 0.5em;
+  text-align: justify;
 }
 
 .btn {
   padding: 6px 23px;
   border: 2px solid var(--primary);
-  background: var(--primary);
+  background-color: black;
+  color: var(--primary);
 }
 
 .btn:hover {
-  background: black;
-  color: var(--primary);
+  background: var(--primary);
+  color: #fff;
   border: 2px solid var(--primary);
 }
 

@@ -6,7 +6,6 @@ nav {
 .navbar-brand h3 {
   color: #fff;
   font-weight: 600;
-  margin-left: 65px;
 }
 
 .navbar-brand {
@@ -16,6 +15,9 @@ nav {
 }
 .navbar-nav .nav-link {
   color: white !important;
+}
+.nav-link:hover {
+  border-bottom: 2px solid;
 }
 
 .navbar-dark .navbar-toggler {
