@@ -13,5 +13,5 @@ body {
   overflow-x: hidden;
 }
 :root {
-  --primary: #efc20c;
+  --primary: rgb(29, 219, 248);
 }

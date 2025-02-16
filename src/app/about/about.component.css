@@ -89,4 +89,10 @@ span {
     top: 25px;
     left: 45%;
   }
+  .box {
+    display: none;
+  }
+  .container {
+    margin-top: -5pc;
+  }
 }

@@ -57,20 +57,18 @@
 
 .box {
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: 350px;
+  height: 350px;
   margin: 20px auto 0;
-  background: var(--primary);
-  border-radius: 40% 80%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgb(16, 15, 15);
+  border: 3px solid var(--primary);
 }
 
 img {
-  border-bottom-left-radius: 150px;
-  width: 100%;
+  width: 300px;
   height: auto;
-  margin-top: -76px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .typing p span {
@@ -98,7 +96,9 @@ img {
   .container .name h1 {
     font-size: 40px;
   }
-
+  .container {
+    margin-bottom: 10px;
+  }
   .typing p {
     font-size: 20px;
   }

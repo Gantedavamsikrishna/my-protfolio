@@ -88,6 +88,12 @@ span {
   background: transparent;
   color: var(--primary);
 }
+td a {
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  padding: 0;
+}
 @keyframes fadeInOut {
   0% {
     opacity: 0;

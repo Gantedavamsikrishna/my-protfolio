@@ -15,7 +15,7 @@ export class AboutComponent {
   }
   downloadResume() {
     const link = document.createElement("a");
-    link.href = "../assests/VamsiKrishna.pdf";
+    link.href = "assets/VamsiKrishna.pdf";
     link.download = "VamsiKrishna.pdf";
     link.click();
   }
